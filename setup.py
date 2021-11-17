@@ -9,9 +9,6 @@ from setuptools import setup, find_packages
 with open('README.rst') as f:
     long_description = f.read()
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
-
 setup(
     name='snntoolbox',
     version='0.6.0',  # see https://www.python.org/dev/peps/pep-0440/
@@ -47,7 +44,7 @@ setup(
 
     keywords='neural networks, deep learning, spiking',
 
-    install_requires=requirements,
+    install_requires=['tensorflow'],
 
     setup_requires=['pytest-runner'],
 
